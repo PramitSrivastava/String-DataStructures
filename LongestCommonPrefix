@@ -1,0 +1,8 @@
+def LongestCommonPrefix(s):
+    pre = s[0]
+    for i in s:
+        while not i.startswith(pre):
+            pre = pre[:-1]
+    return pre
+s = ["caraw","cara","car"]
+print(LongestCommonPrefix(s))
