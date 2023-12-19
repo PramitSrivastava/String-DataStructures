@@ -1,0 +1,19 @@
+def printDups(Str):
+    count = {}  # Initialize an empty dictionary to store character counts
+    for i in range(len(Str)):
+        if Str[i] in count:
+            count[Str[i]] += 1  # If character already in dictionary, increment its count
+
+        else:
+            count[Str[i]] = 1  # If character not in dictionary, set its count to 1
+    print(count)
+
+    # Iterate through the dictionary to print duplicate characters and their counts
+    for it, it2 in count.items():
+        if it2 > 1:  # If the count of characters is greater than 1, then a duplicate is found
+            print(str(it) + ", count = " + str(it2))
+
+# Driver code
+Str = "test string"
+printDups(Str)
+
