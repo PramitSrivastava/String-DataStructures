@@ -5,8 +5,8 @@ class Solution {
         {
             for(int i = 0 ; i < sentence.length() ; i++)
             {
-                char c = sentence.charAt(i);
-                check.add(c);
+              
+                check.add(sentence.charAt(i));
             }
             return check.size() == 26;
         }
